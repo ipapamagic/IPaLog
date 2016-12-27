@@ -10,7 +10,7 @@
 import Crashlytics
 #endif
 
-func IPaLog(_ format: String, args: CVarArg...) {
+public func IPaLog(_ format: String, args: CVarArg...) {
     #if DEBUG
         print(format, getVaList([]))
     #endif
