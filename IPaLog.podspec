@@ -11,5 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.source_files = 'IPaLog.swift'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  s.xcconfig = {
+    "SWIFT_VERSION" => "4.0"
+  }
 end
