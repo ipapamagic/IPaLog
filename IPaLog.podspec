@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'IPaLog'
   s.version          = '2.0'
+  s.swift_version    = '4.1'
   s.summary          = 'simple Log script,can work with Crashlytics by adding define IPaLogCL'
   s.homepage         = 'https://github.com/ipapamagic/IPaLog'
   s.license          = 'MIT'
@@ -11,7 +12,5 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.source_files = 'IPaLog.swift'
-  s.xcconfig = {
-    "SWIFT_VERSION" => "4.0"
-  }
+
 end
