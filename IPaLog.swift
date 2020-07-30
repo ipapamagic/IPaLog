@@ -6,19 +6,8 @@
 //  Copyright © 2016年 AMagicStudio. All rights reserved.
 //
 
-#if IPaLogCL
-import Crashlytics
-#endif
-
-public func IPaLog(_ format: String, args: CVarArg...) {
+public func IPaLog(_ format: String) {
     #if DEBUG
-        print(format, getVaList([]))
-    #endif
-    #if IPaLogCL
-    #if DEBUG
-        CLSNSLogv(format, getVaList([]))
-    #else
-        CLSLogv(format, getVaList([]))
-    #endif
+        print(format)
     #endif
 }
